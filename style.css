@@ -58,3 +58,42 @@ header a:hover {
 }
 
 /* Corpo CADASTRO*/
+aside {
+    display: flex;
+}
+.asideArea {
+    width: calc((100% / 2));   
+    background-color: #63B279;
+}
+.asideArea2 {
+    width: calc((100% / 2));  
+    background-color: #ffffff;
+}
+
+/* Corpo CADASTRO 1*/
+aside .asideArea h1 {
+    color: #ffffff;
+    text-align: center;
+    padding-top: 150px;
+    size: 77px;
+}
+
+aside .asideArea h2 {
+    color: #ffffff;
+    text-align: center;
+    padding: 30px;
+    padding-top: 100px;
+    font-size: 15px;
+    font-style: bold;
+    color: #DEDEDE;
+}
+
+aside .asideArea .botaoLogin {
+    text-align: center;
+    margin-top: 100px;
+    color: #ffffff;
+}
+aside .asideArea .botaoLogin a {
+    border: 1px solid #ffffff;
+    margin: 10px;
+}
