@@ -91,9 +91,21 @@ aside .asideArea h2 {
 aside .asideArea .botaoLogin {
     text-align: center;
     margin-top: 100px;
-    color: #ffffff;
+    margin-bottom: 100px;
 }
 aside .asideArea .botaoLogin a {
-    border: 1px solid #ffffff;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-radius: 50px;
+    border: 2px solid #DEDEDE;
     margin: 10px;
+    color: #ffffff;
 }
+aside .asideArea .botaoLogin a:hover {
+    color: #DEDEDE;
+    border: 2px solid #ffffff;
+}
+
