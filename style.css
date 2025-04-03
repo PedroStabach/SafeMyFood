@@ -73,10 +73,30 @@ header #botaoLogin  {
 }
 .areaMob {
     display: none;
+    width: 43px;
+    height: 43px;
+    padding-right: 3px;
+    justify-content: end;
+    text-align: end;
+    align-items: end;
 }
 @media(max-width: 767px){
     .areaMob {
-        display: block;
+        display: inline-block;
+    }
+    .mobTrac1{
+        width: 40px;
+        border-radius: 5px;
+        height: 10px;
+        background-color: #ffffff;
+        margin-bottom: 5px;
+    }
+    .mobTrac2 {
+        width: 30px;
+        border-radius: 5px;
+        height: 10px;
+        background-color: #ffffff;
+        margin-left: 10px;
     }
     .headeArea nav {
         display: none;
