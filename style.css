@@ -117,7 +117,7 @@ header #botaoLogin  {
   
   @keyframes slidein {
     from {
-      margin-right: -50%;
+      margin-right: -30%;
       margin-top: 0px;
     }
   
