@@ -13,8 +13,7 @@ body {
 }
 .bodyArea {
     width: 768px;
-    background-color: #000000;
-    height: 10000px;
+    height: 100%;
 }
 
 
@@ -72,17 +71,30 @@ header #botaoLogin  {
     padding-left: 13px;
     padding-right: 13px;
 }
-
+.areaMob {
+    display: none;
+}
+@media(max-width: 767px){
+    .areaMob {
+        display: block;
+    }
+    .headeArea nav {
+        display: none;
+    }
+}
 /* Corpo CADASTRO*/
 aside {
     display: flex;
+    flex-wrap: wrap;
 }
 .asideArea {
-    width: calc((100% / 2));   
+    flex: 1;
+    height: calc(100vh - 100px);
     background-color: #63B279;
 }
 .asideArea2 {
-    width: calc((100% / 2));  
+    flex: 1; 
+    height: calc(100vh - 100px);
     background-color: #ffffff;
 }
 
@@ -125,3 +137,13 @@ aside .asideArea .botaoLogin a:hover {
     border: 2px solid #ffffff;
 }
 
+@media(max-width: 425px){
+    .asideArea {
+        width: 100%;
+        flex: none;
+    }
+    .asideArea2 {
+        width: 100%;
+        flex: none;
+    }
+}
