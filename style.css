@@ -114,6 +114,7 @@ header #botaoLogin  {
     animation-duration: 2s;
     animation-name: slidein;
   }
+
   
   @keyframes slidein {
     from {
@@ -133,17 +134,34 @@ header #botaoLogin  {
     .mobTrac1{
         width: 40px;
         border-radius: 5px;
-        height: 10px;
+        height: 8px;
         background-color: #ffffff;
         margin-bottom: 5px;
     }
     .mobTrac2 {
-        width: 30px;
+        width: 40px;
         border-radius: 5px;
-        height: 10px;
+        height: 8px;
         background-color: #ffffff;
-        margin-left: 10px;
+        margin-bottom: 5px;
     }
+    .mobTrac {
+        margin-left: 10px; 
+        width: 30px;
+    }
+
+    .mobTrac3 {
+        width: 40px;
+        border-radius: 5px;
+        height: 8px;
+        background-color: #ffffff;
+        margin-left: 0px;
+    }
+    .mobTrac4 {
+        margin-left: 20px; 
+        width: 20px;
+    }
+    
     .headeArea nav {
         display: none;
     }
@@ -167,6 +185,12 @@ aside {
 /* Corpo CADASTRO 1*/
 aside .asideArea h1 {
     color: #ffffff;
+    text-align: center;
+    padding-top: 150px;
+    size: 77px;
+}
+aside .asideArea2 h1 {
+    color: #63B279;
     text-align: center;
     padding-top: 150px;
     size: 77px;
@@ -202,6 +226,30 @@ aside .asideArea .botaoLogin a:hover {
     color: #DEDEDE;
     border: 2px solid #ffffff;
 }
+aside .asideArea2 .areaImagensLogin nav ul li img {
+    width: 30px;
+    height: 30px;
+    opacity: 40%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+aside .asideArea2 .areaImagensLogin nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    padding-top: 15px;
+}
+aside .asideArea2 .areaImagensLogin nav ul li{
+    display: flex;
+    list-style: none;
+    flex: 1;
+    justify-content: center;
+    align-items:center;
+}
+
 
 @media(max-width: 450px){
     .asideArea {
@@ -211,5 +259,10 @@ aside .asideArea .botaoLogin a:hover {
     .asideArea2 {
         width: 100%;
         flex: none;
+    }
+    aside .asideArea2 .areaImagensLogin nav ul{
+        padding-left: 15vh;
+        padding-right: 15vh;
+        padding-top: 25px;
     }
 }
