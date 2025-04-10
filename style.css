@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-
+    list-style: none;
+    outline: 0;
 }
 
 body {
@@ -249,7 +250,46 @@ aside .asideArea2 .areaImagensLogin nav ul li{
     justify-content: center;
     align-items:center;
 }
+aside .asideArea2 #formCadastro nav ul {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+aside .asideArea2 #formCadastro nav ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+aside .asideArea2 #formCadastro nav ul li .areaInputCadastro {
+    width: calc(100%  - 10vh);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #D9D9D9;
+    padding: 5px;
+    border-radius: 5px;
+}
+aside .asideArea2 #formCadastro nav ul li .areaInputCadastro input {
 
+    width: calc(100% - 30px);
+    background-color: #D9D9D9;
+    border: 0;
+}
+aside .asideArea2 #formCadastro nav ul li .areaInputCadastro img {
+    width: 30px;
+    height: 30px;
+    background-color: red;
+}
+#formCadastro h2 {
+    color: #63B279;
+    text-align: center;
+    font-size: 15px;
+}
 
 @media(max-width: 450px){
     .asideArea {
