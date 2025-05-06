@@ -202,7 +202,13 @@ aside .asideArea .botaoLogin a:hover {
     color: #DEDEDE;
     border: 2px solid #ffffff;
 }
-
+.areaCadastro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
 @media(max-width: 450px){
     .asideArea {
         width: 100%;
