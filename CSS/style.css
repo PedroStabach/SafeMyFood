@@ -13,13 +13,14 @@ body {
     background-color: #D9D9D9;
 }
 .bodyArea {
-    width: 768px;
-    height: 100%;
+    width: 1000px;
+
 }
 
 
 /* Cabecalho */
 header {
+    margin-left: 0.5px;
     background-color: #63B279;
     height: 100px;
     align-items: center;
