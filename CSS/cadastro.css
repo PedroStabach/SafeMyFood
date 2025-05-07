@@ -47,7 +47,7 @@ aside .botaoLogin {
     bottom: 50px;
 }
 aside .botaoLogin a {
-
+    font-size: 15px;
     text-decoration: none;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -58,7 +58,7 @@ aside .botaoLogin a {
     margin: 10px;
     color: #ffffff;
 }
-aside .asideArea .botaoLogin a:hover {
+aside .botaoLogin a:hover {
     color: #DEDEDE;
     border: 2px solid #ffffff;
 }
@@ -111,6 +111,9 @@ button .botaoLogin a {
 }
 aside .asideArea2 .botaoLogin a {
     background-color: #63B279;
+} 
+aside .asideArea2 #formCadastro nav ul li .areaInputCadastro input {
+    margin-left: 10px;
 }
 aside .asideArea2 #formCadastro nav ul li .areaInputCadastro {
     width: calc(100%  - 15vh);
