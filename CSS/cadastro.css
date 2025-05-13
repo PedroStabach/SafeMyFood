@@ -12,11 +12,13 @@ aside {
     background-color: #63B279;
 }
 .asideArea2 {
-    flex: 1; 
+    flex: 1;
     height: calc(100vh - 100px);
     background-color: #ffffff;
 }
-
+.bodyArea {
+    height: 100vh;
+}
 /* Corpo CADASTRO 1*/
 aside .asideArea h1 {
     color: #ffffff;
@@ -40,7 +42,9 @@ aside .asideArea h2 {
     font-style: bold;
     color: #DEDEDE;
 }
-
+button{
+    background-color: #63B279;
+}
 aside .botaoLogin {
     text-align: center;
     position: absolute;
@@ -62,6 +66,9 @@ aside .botaoLogin a:hover {
     color: #DEDEDE;
     border: 2px solid #ffffff;
 }
+.asideArea img {
+     max-width: calc(100% - 15vh)
+}
 aside .asideArea2 .areaImagensLogin nav ul li img {
     width: 20px;
     height: 20px;
@@ -82,6 +89,8 @@ aside .asideArea2 .areaImagensLogin nav ul{
 aside .asideArea2 .areaImagensLogin nav ul li{
     display: flex;
     list-style: none;
+    padding-left: 2px;
+    padding-right: 2px;
     flex: 1;
     justify-content: center;
     align-items:center;
@@ -99,10 +108,10 @@ aside .asideArea2 #formCadastro nav ul li {
     justify-content: center;
     text-align: center;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 4vh;
 }
 button {
-    background-color: #fff;
+    background-color: transparent;
     border: none;
     color: #63B279;
 }
@@ -133,7 +142,6 @@ aside .asideArea2 #formCadastro nav ul li .areaInputCadastro input {
 aside .asideArea2 #formCadastro nav ul li .areaInputCadastro img {
     width: 30px;
     height: 30px;
-    background-color: red;
 }
 #formCadastro h2 {
     color: #63B279;
@@ -141,7 +149,6 @@ aside .asideArea2 #formCadastro nav ul li .areaInputCadastro img {
     font-size: 15px;
 }
 .areaButton {
-    height: 100px;
     padding-top: 5vh;
     display: flex;
     flex-direction: column;
@@ -165,4 +172,34 @@ aside .asideArea2 #formCadastro nav ul li .areaInputCadastro img {
         padding-top: 25px;
     }
 }
-
+@media(max-width: 650px){
+    .asideArea img {
+        width: 250px;
+        height: 250px;
+    }
+    aside .asideArea2 .areaImagensLogin nav ul {
+        padding: 0;
+    }
+    
+}
+/* PC */
+@media(min-width: 768px){
+ 
+    aside .asideArea2 #formCadastro nav ul li .areaInputCadastro {
+        max-width: 450px;
+    }
+    aside .asideArea2 .areaImagensLogin nav ul {
+        width: 250px;
+    }
+    aside .asideArea2 .areaImagensLogin nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    aside .asideArea2 #formCadastro nav ul {
+        max-height: 500px;
+    }
+    .asideArea img {
+        width: 500px;
+    }
+}

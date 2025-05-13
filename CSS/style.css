@@ -168,3 +168,20 @@ header #botaoLogin  {
         display: none;
     }
 }
+@media(min-width: 768px){
+    .bodyArea {
+        width: 100%;
+    }
+
+}
+@media(min-width: 1000px) {
+    .headeArea {
+        flex: 1;
+    }
+    .headArea {
+        flex: 1;
+    }
+    header nav {
+        justify-content: center;
+    }
+}
