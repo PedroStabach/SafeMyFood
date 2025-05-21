@@ -1,44 +1,55 @@
-document.getElementById("formCadastro").addEventListener("submit", async function (event) {
-    event.preventDefault(); // evita o envio padrão
-
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const birthdate = document.getElementById("birthdate").value;
-    const password = document.getElementById("password").value;
-    const confirmPassword = document.getElementById("confirmPassword").value;
-
-    if (password !== confirmPassword) {
-        alert("As senhas não coincidem.");
-        return;
-    }
-
-    const data = {
-        name,
-        email,
-        birthdate,
-        password
-    };
-
+// Função para carregar e processar o arquivo JSON
+async function loadAndProcessJSON() {
     try {
-        const response = await fetch("https://sua-api.com/cadastrar", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(data)
-        });
-
-        if (response.ok) {
-            const result = await response.json();
-            alert("Cadastro realizado com sucesso!");
-            console.log(result);
-            
-            // redirecionar ou limpar form se quiser
-        } else {
-            alert("Erro ao cadastrar. Verifique os dados.");
+        // Usamos fetch para buscar o arquivo mercados.json
+        const response = await fetch('mercados.json');
+        
+        // Verificamos se a requisição foi bem-sucedida
+        if (!response.ok) {
+            throw new Error('Erro ao carregar o arquivo JSON');
         }
+
+        // Convertemos a resposta em JSON
+        const jsonData = await response.json();
+
+        // Função para gerar os elementos HTML dinamicamente
+        gerarMercados(jsonData);
+
     } catch (error) {
-        console.error("Erro na requisição:", error);
-        alert("Erro ao conectar com o servidor.");
+        console.error("Erro ao carregar o arquivo JSON:", error);
     }
-});
+}
+
+// Função para gerar os elementos HTML dinamicamente
+function gerarMercados(data) {
+    const mercadoArea = document.getElementById('mercadoArea'); // A área onde vamos adicionar os mercados
+
+    // Itera sobre os dados JSON
+    data.forEach(item => {
+        // Cria a div do mercado parceiro
+        const mercadoParceiro = document.createElement('div');
+        mercadoParceiro.classList.add('mercadoParceiro');
+        
+        // Cria a imagem
+        const mercadoImg = document.createElement('div');
+        mercadoImg.classList.add('mercadoParceiroImg');
+        const imgElement = document.createElement('img');
+        imgElement.src = item.img;  // Define o caminho da imagem
+        imgElement.alt = item.nome; // Define o nome para o atributo alt
+        mercadoImg.appendChild(imgElement);
+
+        // Cria o nome do mercado
+        const nomeMercado = document.createElement('h2');
+        nomeMercado.textContent = item.nome; // Define o nome do mercado
+
+        // Adiciona a imagem e o nome ao mercadoParceiro
+        mercadoParceiro.appendChild(mercadoImg);
+        mercadoParceiro.appendChild(nomeMercado);
+
+        // Adiciona o mercadoParceiro à área do mercado
+        mercadoArea.appendChild(mercadoParceiro);
+    });
+}
+
+// Chama a função para carregar e processar o JSON
+loadAndProcessJSON();

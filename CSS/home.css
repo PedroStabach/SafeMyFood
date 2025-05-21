@@ -20,6 +20,7 @@ aside .homeArea h2 {
 }
 #homeImg1 img{
     width: calc(100% - 40px);
+    max-width: 600px;
 }
 .imgFacilit {
     width: calc(100% - 40px);
@@ -47,4 +48,22 @@ aside .homeArea h2 {
 }
 #mercadosParceiros {
     margin-top: 100px;
+}
+.mercadoParceiroArea {
+    width: 100%;
+    display: flex;
+    flex-wrap:wrap ;
+}
+.mercadoParceiro {
+    flex: 1;
+    max-width: 500px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.mercadoParceiro .mercadoParceiroImg {
+    width: 100%;
 }
