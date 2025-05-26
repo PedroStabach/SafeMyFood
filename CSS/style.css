@@ -5,16 +5,19 @@
     list-style: none;
     outline: 0;
 }
-
+footer {
+    display: none;
+}
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #D9D9D9;
+
 }
 .bodyArea {
     width: 768px;
-
+    overflow-x: hidden;
 }
 /* Cabecalho */
 header {
@@ -128,6 +131,31 @@ header #botaoLogin  {
     }
   }
 @media(max-width: 767px){
+    footer {
+        width: 100%;
+        display: block;
+        background-color: #63B279;
+        height: 100px;
+    }
+    footer nav {
+    width: 100%;
+    }
+    footer nav ul{
+        display: flex;
+    }
+    footer nav ul li {
+        flex: 1;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    aside .botaoLogin {
+        display: block;
+    }
+    header {
+        display: none;
+    }
     .areaMob {
         display: inline-block;
     }
@@ -183,4 +211,4 @@ header #botaoLogin  {
         justify-content: center;
     }
 }
->>>>>>> development:CSS/style.css
+
