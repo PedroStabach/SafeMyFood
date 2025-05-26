@@ -9,7 +9,7 @@ async function carregarSlides() {
   dados.forEach(item => {
     const slide = document.createElement('div');
     slide.className = 'mercadoParceiro';
-    slide.innerHTML = `<div class="mercadoParceiroImg"><img src="img/${item.img}" alt=""></div>
+    slide.innerHTML = `<div class="mercadoParceiroImg"><img src="images/${item.img}" alt=""></div>
         <h2>${item.nome}</h2>`;
     area.appendChild(slide);
   });

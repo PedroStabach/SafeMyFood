@@ -1,14 +1,14 @@
 [
     {
-        "img" : "imagem",
+        "img" : "condor.jpg",
         "nome" : "Condor"
     },
     {
-        "img" : "imagem",
+        "img" : "max.jpg",
         "nome" : "Max"
     },
     {
-        "img" : "imagem",
+        "img" : "harguer.jpg",
         "nome" : "Hanger"
     }
 
