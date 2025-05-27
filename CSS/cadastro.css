@@ -7,7 +7,7 @@ aside {
     display: flex;
     align-items: center;
     flex-direction: column;
-    flex: 1;
+    width: 50%;
     align-items: center;
     height: calc(100vh - 100px);
     background-color: #63B279;
@@ -162,18 +162,21 @@ aside .botaoLogin {
     position:sticky;
 }
 .areaImg {
+    display: flex;
     justify-content: center;
     align-items: center;
 }
+@media(max-width: 650px) {
+    aside .asideArea, aside .asideArea2 {
+        min-width: none;
+    }
+}
 @media(max-width: 767px){
+    aside .asideArea, aside .asideArea2 {
+        height: 100vh;
+    }
     aside .asideArea h1 {
         padding-top: 50px;
-    }
-    .areaImg {
-        display: flex;
-        height: 60vh;
-        justify-content: center;
-        align-items: center;
     }
     aside .asideArea2 h1 {
         padding-bottom: 20px;

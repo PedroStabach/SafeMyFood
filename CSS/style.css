@@ -142,6 +142,11 @@ header #botaoLogin  {
         position: absolute;
         bottom: 0px;
     }
+    .footerArea {
+        display: flex;
+        align-items: center;
+        height: 50px;
+    }
     footer nav {
     width: 100%;
     }
