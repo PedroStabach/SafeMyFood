@@ -1,7 +1,7 @@
 /* Corpo CADASTRO*/
 aside {
     display: flex;
-    flex-wrap: wrap;
+
 }
 .asideArea {
     display: flex;
@@ -47,9 +47,8 @@ button{
     background-color: #63B279;
 }
 aside .botaoLogin {
-    text-align: center;
     position: absolute;
-    bottom: 50px;
+    bottom: 30px;
 }
 aside .botaoLogin a {
     font-size: 15px;
@@ -159,7 +158,8 @@ aside .asideArea2 #formCadastro nav ul li .areaInputCadastro img {
     height: 100%;
 }
 aside .botaoLogin {
-    position:sticky;
+    position:absolute;
+    bottom: 50px;
 }
 .areaImg {
     display: flex;
@@ -170,8 +170,18 @@ aside .botaoLogin {
     aside .asideArea, aside .asideArea2 {
         min-width: none;
     }
+
 }
 @media(max-width: 767px){
+    aside .asideArea .botaoLogin {
+        padding-top: 24vh;
+    }
+    aside .botaoLogin {
+        position: sticky;
+    }
+    aside {
+        flex-wrap: wrap;
+    }
     aside .asideArea, aside .asideArea2 {
         height: 100vh;
     }
