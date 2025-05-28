@@ -1,3 +1,4 @@
+
 const header = document.getElementById("header").innerHTML = `
             <div class="headArea">
             <div id="nameText">SaveMyFood</div>
@@ -28,3 +29,5 @@ const footer = document.getElementById("footer").innerHTML = `
                 </ul>
             </nav>
         </div>`;
+
+

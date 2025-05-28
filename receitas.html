@@ -1,12 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="CSS/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Familia</title>
+    <title>SaveMyFood</title>
+    <link rel="stylesheet" href="CSS/receitas.css">
 </head>
 <body>
+    <header>
+        <div class="headArea">
+            <div id="nameText">Save My Food</div>
+        </div>
+        <div class="headArea">
+            <nav>
+                <a href="home.html">Início</a>
+                <a href="family.html">Família</a>
+                <a href="biblioteca.html">Biblioteca</a>
+                <a href="scanner.html">Scanner</a>
+                <a href="receitas.html">Receitas</a>
+                <a href="cadastro.html" class="botaoLogin">Entrar</a>
+            </nav>
+            <div class="areaMob" id="toggleMenu">
+                <div class="mobTrac1" id="mobTrac"></div>
+                <div class="mobTrac2" id="mobTrac2"></div>
+                <div class="mobTrac3" id="mobTrac3"></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="receitas">
+            <h1>🍴 Sugestões de Receitas:</h1>
+
+            <!-- Imagem grandona nipe de outdoor -->
+            <img src="images/pimagemIngred.jpg" alt="Imagem ilustrativa de ingredientes" class="header-image">
+
+            <!-- Barrinha de pesquisa pro usuario ver os bgl q tem em casa e pedir a receita -->
+            <form id="form-busca" onsubmit="handleSubmit(event)">
+                <label for="ingredientes">Buscar por ingredientes:</label>
+                <div class="form-linha">
+                    <div class="tag-container" id="ingredientes">
+                        <span class="tag">frango</span>
+                        <span class="tag">tomate</span>
+                        <span class="tag">macarrão</span>
+                        <span class="tag">queijo</span>
+                    </div>
+                    <button class="botaoBuscar" type="submit">Buscar</button>
+                </div>
+            </form>
+            <!-- Cards pra ficar mais bunitinho de ver -->
+            <div class="card-container">
+                <div class="card">
+                    <img src="images/macarraoaomolho.jpg" alt="Macarrão ao molho">
+                    <h2>Macarrão ao molho</h2>
+                    <ul>
+                        <li>200 g de macarrão</li>
+                        <li>2 colheres (sopa) de azeite</li>
+                    </ul>
+                    <p>Cozinhe o macarrão e refogue com azeite e molho de tomate...</p>
+                    <a href="#" class="btn">Ver receita completa</a>
+                </div>
+
+                <div class="card">
+                    <img src="images/Sopalegumes.jpeg" alt="Sopa de legumes">
+                    <h2>Sopa de legumes</h2>
+                    <ul>
+                        <li>1 cenoura picada</li>
+                        <li>Legumes variados</li>
+                    </ul>
+                    <p>Refogue os legumes e cozinhe em caldo com temperos a gosto...</p>
+                    <a href="#" class="btn">Ver receita completa</a>
+                </div>
+
+                <div class="card">
+                    <img src="images/Rfrangoassado.jpeg" alt="Frango assado">
+                    <h2>Frango assado</h2>
+                    <ul>
+                        <li>1 frango inteiro</li>
+                        <li>Alho, sal e temperos a gosto</li>
+                    </ul>
+                    <p>Tempere bem o frango e leve ao forno por aproximadamente 1h30 a 200°C...</p>
+                    <a href="#" class="btn">Ver receita completa</a>
+                </div>
+            </div>
+        </section>
+    </main>
 <div class="bodyArea">
     <header id="header"></header>
 <footer id="footer"></footer>
