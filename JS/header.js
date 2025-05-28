@@ -3,7 +3,7 @@ const header = document.getElementById("header").innerHTML = `
             <div class="headArea">
             <div id="nameText">SaveMyFood</div>
         </div>
-        <div class="headeArea">
+        <div class="headArea2">
             <nav>
                 <ul>
                     <li><a href="home.html">Inicio</a> </li>
