@@ -1,16 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="CSS/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="CSS/family.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Familia</title>
-</head>
-<body>
-<div class="bodyArea">
-    <header id="header"></header>
-    <footer id="footer"></footer>
-</div>
-</body>
-<script src="JS/header.js"></script>
+  </head>
+  <body>
+    <div class="bodyArea">
+      <header>
+        <div id="nameText">SaveMyFood</div>
+        <div class="headArea">
+          <nav>
+            <ul>
+              <li><a href="home.html">Inicio</a></li>
+              <li><a href="family.html">Familia</a></li>
+              <li><a href="biblioteca.html">Biblioteca</a></li>
+              <li><a href="scanner.html">Scanner</a></li>
+              <li><a href="receitas.html">Receitas</a></li>
+              <li><a href="cadastro.html" id="botaoLogin">Entrar</a></li>
+            </ul>
+          </nav>
+          <div class="areaMob" id="toggleMenu">
+            <div class="mobTrac1" id="mobTrac"></div>
+            <div class="mobTrac2" id="mobTrac2"></div>
+            <div class="mobTrac3" id="mobTrac3"></div>
+          </div>
+        </div>
+      </header>
+
+      <p class="txtTitle">Família</p>
+      <p class="txtSubTitle">
+        Adicione membros familiares para um controle maior de seus alimentos
+      </p>
+      <div class="page">
+        <section class="container">
+          <img src="images/Grocery shopping-bro.png" id="people" />
+          <a href="https://storyset.com/people" target="_blank" class="link">
+            People by Storyset
+          </a>
+          <br />
+          <a href="https://www.flaticon.com" target="_blank" class="link">
+            Icons by Flaticon
+          </a>
+        </section>
+
+        <section id="caixas">
+          <img src="images/familia.png" id="familyIcon" />
+          <div class="conjunto">
+            <p class="txt">Seu pin:</p>
+            <br />
+            <div class="caixa">
+              <p class="txtPin">845-391</p>
+            </div>
+            <br />
+
+            <div class="buttonBox">
+              <button class="buttons">Copiar</button>
+              <button class="buttons">Compartilhar</button>
+            </div>
+          </div>
+
+          <div class="conjunto" id="addMembro">
+            <p class="txt">Adicione um membro:</p>
+            <br />
+            <div class="caixa">
+              <input
+                type="text"
+                placeholder="Digite o Pin do membro"
+                class="txtPin"
+              />
+            </div>
+            <br />
+            <div class="buttonBox">
+              <button class="buttons">Adicionar</button>
+              <button class="buttons">Apagar</button>
+            </div>
+          </div>
+        </section>
+        <section>
+          <p class="txt txt2">Produtos Compartilhados</p>
+          <div class="produtos">
+            <div class="fundoProdutos">
+              <img src="images/bread.png" class="imagemProdutos" />
+              <div class="infoProdutos">
+                <p class="txtProdutos nomeProduto">Pão</p>
+                <br />
+                <p class="txtProdutos">Validade: 26/05/2025</p>
+                <br />
+                <p class="txtProdutos">Adicionado por:<br />Vitoria</p>
+              </div>
+            </div>
+
+            <div class="fundoProdutos">
+              <img src="images/queijo.png" class="imagemProdutos" />
+              <div class="infoProdutos">
+                <p class="txtProdutos nomeProduto">Queijo</p>
+                <br />
+                <p class="txtProdutos">Validade: 04/06/2025</p>
+                <br />
+                <p class="txtProdutos">Adicionado por:<br />Gustavo</p>
+              </div>
+            </div>
+
+            <div class="fundoProdutos">
+              <img src="images/carne.png" class="imagemProdutos" />
+              <div class="infoProdutos">
+                <p class="txtProdutos nomeProduto">Carne</p>
+                <br />
+                <p class="txtProdutos">Validade: 30/05/2025</p>
+                <br />
+                <p class="txtProdutos">Adicionado por:<br />Maria</p>
+              </div>
+            </div>
+
+            <div class="fundoProdutos">
+              <img src="images/leite.png" class="imagemProdutos" />
+              <div class="infoProdutos">
+                <p class="txtProdutos nomeProduto">Leite</p>
+                <br />
+                <p class="txtProdutos">Validade: 10/06/2025</p>
+                <br />
+                <p class="txtProdutos">Adicionado por:<br />Caue</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <footer class="menu">
+          <div id="membros">
+            <div class="fundoMembro">
+              <div class="imgName">
+                <img src="images/girl 1.png" id="membroIcon" />
+                <p class="txtMembros">Vinicius</p>
+              </div>
+              <br />
+              <p class="txtMembros">Entrou em 20/03/2025</p>
+              <br />
+              <p class="txtMembros">Produtos registrados: 01</p>
+              <br />
+              <button class="remover">Remover</button>
+            </div>
+
+            <div class="fundoMembro">
+              <div class="imgName">
+                <img src="images/boy.png" id="membroIcon" />
+                <p class="txtMembros">Eric</p>
+              </div>
+              <br />
+              <p class="txtMembros">Entrou em 01/12/2024</p>
+              <br />
+              <p class="txtMembros">Produtos registrados: 01</p>
+              <br />
+              <button class="remover">Remover</button>
+            </div>
+
+            <div class="fundoMembro">
+              <div class="imgName">
+                <img src="images/girl.png" id="membroIcon" />
+                <p class="txtMembros">Pedro</p>
+              </div>
+              <br />
+              <p class="txtMembros">Entrou em 05/04/2025</p>
+              <br />
+              <p class="txtMembros">Produtos registrados: 01</p>
+              <br />
+              <button class="remover">Remover</button>
+            </div>
+
+            <div class="fundoMembro">
+              <div class="imgName">
+                <img src="images/man.png" id="membroIcon" />
+                <p class="txtMembros">Luigi</p>
+              </div>
+              <br />
+              <p class="txtMembros">Entrou em 14/02/2025</p>
+              <br />
+              <p class="txtMembros">Produtos registrados: 01</p>
+              <br />
+              <button class="remover">Remover</button>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
 </html>
