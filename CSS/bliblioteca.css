@@ -1,13 +1,22 @@
+.bibliotecaArea{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Cabecalho{
+    margin-right: 55%;
+}
 article .Topico{
-    padding-left: 53px;
     margin-top: 30px;
+    
 }
 
 article .subTop{
     font-size: 10px;
     color: #3e3e3e;
     margin-bottom: 30px;
-    padding-left: 53px;
 }
 
 article .listaArea {
@@ -16,7 +25,6 @@ article .listaArea {
     border-radius: 10px;
     color: #ffffff; 
     width: 80%;
-    margin: auto;
     margin-top: 30px;
 }
 
@@ -56,15 +64,14 @@ article .Organizador{
     cursor: pointer;
 }
 
-      
 article .produtos{
     display: flex;
     background-color: #ffffff;
     padding: 5px;
     border-radius: 10px;
-    color: black;
+    color: black;   
     font-weight: bold;
-    width: 92%;
+    width: 96%;
     margin-top: 10px;
     align-items: center;
 }
@@ -95,31 +102,31 @@ article .produtos{
 
 
 .tooltip-container {
-  position: relative;
-  display: inline-block;
+    position: relative;
+    display: inline-block;
 }
 
 .tooltip-text {
-  visibility: hidden;
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 10px;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%; /* Acima do ícone */
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 0;
-  transition: opacity 0.3s;
-  width: 230px;
-  font-size: 12px;
+    visibility: hidden;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; 
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    width: 230px;
+    font-size: 12px;
 }
 
 .tooltip-container:hover .tooltip-text {
-  visibility: visible;
-  opacity: 1;
+    visibility: visible;
+    opacity: 1;
 }
 
 #OpcoesdeOrganizador{
