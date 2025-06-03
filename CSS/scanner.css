@@ -1,0 +1,148 @@
+.info {
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 40%;
+  }
+  
+  .linha {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+    width: 200px; 
+  }
+  
+  .label {
+    color: gray;
+  }
+  
+  .valor {
+    color: black;
+  }
+  
+  .botao {
+    list-style: none;
+    margin-top: 20px;
+    padding: 8px 16px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    width: 200px;
+  }
+  .botao:hover{
+    background-color: gray;
+  }
+    
+
+.ftetxt{
+    display: flex;
+    gap: 200px;
+    margin-top: 40px;
+}
+.fotoleite{
+    margin-left: 20px;
+    border-radius: 10px;
+    margin-top: 80px;
+}
+.imgqrcode{
+    margin-top: 20px;
+    width: 200px;
+    display: block;
+    margin-left: 10px;
+}
+#link{
+
+    font-size: 8px;
+    color: black;
+    margin-left: 100px;
+  
+    
+
+}
+.tudo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.produtos{
+    height: 200px;
+    width: 200px;
+    margin-left: 5px;
+    border-radius: 5px;
+    background-color: #C0C0C0;
+    box-shadow: 1px 1px 3px black;
+    
+
+
+}
+.itens{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-left: 5px;
+    margin-top: 10px;
+    background-color: #D3D3D3;
+    border-radius: 10px;
+    
+}
+
+.conjunto{
+    padding: 10px;
+    
+    
+}
+
+.textos{
+    display: flex;
+    color: black;
+    font-size: medium;
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     margin-top: -20px;
+     margin-left: -12px;
+
+
+
+}
+
+#adicionar{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    background-color: #D3D3D3;
+    
+}
+.add:hover{
+    transform: scale(1.1);
+}
+
+
+
+.add{
+    align-items: center;
+    margin-left: 17%;
+    transition: transform 0.2s ease;
+}
+.adicionados{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    font-size: large;
+    margin-left: 20px;
+    font-weight: 600;
+    
+}
+.qrcode{
+  margin-right: 10px;
+}
+#linkicon{
+  font-size: 10px;
+  color: black ;
+  
+
+}
+
