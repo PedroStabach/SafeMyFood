@@ -36,6 +36,7 @@
 #people {
   height: auto;
   width: 100%;
+  padding-left: 15px;
 }
 .link {
   font-size: 10px;
