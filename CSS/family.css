@@ -1,229 +1,257 @@
 .page {
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
-  }
-  
-  .txtTitle {
-    font-size: 3.3rem;
-    font-weight: bold;
-    margin: 10px;
-  }
-  
-  .txtSubTitle {
-    font-size: 1.3rem;
-    font-weight: bold;
-    margin: 10px;
-    margin-bottom: 40px;
-  }
-  
-  #people {
-    height: 100%;
-    width: 70%;
-  }
-  .link {
-    font-size: 10px;
-    color: black;
-    padding-left: 30px;
-  }
-  
-  .link:hover {
-    color: darkgray;
-  }
-  
-  .txt {
-    font-size: 1.6rem;
-    font-weight: 600;
-  }
-  
-  #familyIcon {
-    height: 10rem;
-    width: 12rem;
-  }
-  
-  /* Caixas Pin */
-  .caixa {
-    display: flex;
-    border: 0.4rem solid #63b279;
-    background-color: #63b279;
-    border-radius: 0.7rem;
-    width: 90%;
-    height: 14%;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 4px 4px 4px gray;
-  }
-  
-  .caixa input {
-    background-color: transparent;
-    border: none;
-    outline: none;
-    font-size: 1rem;
-    font-weight: 500;
-    width: 100%;
-    text-align: center;
-  }
-  
-  .txtPin {
-    font-size: 1rem;
-    display: flex;
-    align-items: center;
-    font-weight: 500;
-  }
-  .conjunto {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  #caixas {
-    display: flex;
-    justify-content:space-around  ;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+.txtImg {
+  width: 65%;
+}
+.area1 {
+  display: flex;
+  flex-direction: row;
+  height: 80vh;
+}
 
-  }
-  
-  .buttonBox {
-    display: flex;
-    gap: 10px;
-    width: 100%;
-    justify-content: space-between;
-  }
-  
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
 
-  
-  .buttons {
-    border: none;
-    background-color: #63b279;
-    border-radius: 20px;
-    width: 50%;
-    height: 30px;
-    transition: transform 0.2s ease, background-color 0.2s ease;
-    font-weight: bold;
-    box-shadow: 4px 4px 4px gray;
-  }
-  .buttons:hover {
-    background-color: #49855a;
-    transform: scale(1.1);
-  }
-  
-  /* Produtos */
-  .txt2 {
+.txtTitle {
+  font-size: 3.3rem;
+  font-weight: bold;
+  margin: 10px;
+  width: 200px;
+}
 
-    padding-bottom: 15px;
-  }
-  
-  .produtos {
-    width: 80%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
-  }
-  
-  .fundoProdutos {
-    display: flex;
-    flex-direction: row;
-    background-color: #e8e8e8;
-    border: 1px solid #cacaca;
-    border-radius: 20px;
-    gap: 15px;
-    transition: transform 0.2s ease;
-    box-shadow: 7px 7px 4px gray;
-  }
+.txtSubTitle {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 10px;
+  margin-bottom: 40px;
+  width: 730px;
+}
 
-  .divProdutos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .imagemProdutos {
-    height: 9rem;
-    width: 9rem;
-    margin: 15px;
-  }
-  
-  .txtProdutos {
-    font-size: 1rem;
-    display: flex;
-    align-items: center;
-    font-weight: bold;
-  }
-  
-  .infoProdutos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  .nomeProduto {
-    font-size: 1.8rem;
-    font-variant-caps: all-small-caps;
-  }
-  
-  /* Membros Familia */
-  .menu {
-    background-color: #63b279; a aaa a  aa
-    width: 100%;  a a a 
-    border: 1px solid #63b279;
-    margin-top: 35px;
-  }
-  
-  #membros {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    margin: 1rem;
-    justify-content: center;
-  }
-  
-  #membroIcon {
-    width: 7rem;
-    height: auto;
-  }
-  .imgName {
-    background-color: #63b279;
-    border: 5px solid #63b279;
-    border-radius: 10%;
-    box-shadow: 4px 4px 2px #3b6848;
-  }
-  
-  .fundoMembro {
-    background-color: #49855a;
-    border: 0.5rem solid #49855a;
-    border-radius: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 4px 4px 4px #3b6848;
-  }
-  
-  .txtMembros {
-    font-size: 1rem;
-    text-align: center;
-    font-weight: bold;
-  }
-  
-  .remover {
-    border: none;
-    width: 100%;
-    height: 10%;
-    background-color: #ba2f2f;
-    border-radius: 20px;
-    transition: transform 0.2s ease, background-color 0.2s ease;
-    margin-top: 10%;
-    height: 25px;
-    font-weight: bold;
-  }
-  
-  .remover:hover {
-    background-color: #822222;
-    transform: scale(1.1);
-  }
-  
-  .fundoProdutos:hover {
-    transform: scale(1.05);
-  }
-  
+#people {
+  height: auto;
+  width: 100%;
+}
+.link {
+  font-size: 10px;
+  color: black;
+  padding-left: 30px;
+}
+
+.link:hover {
+  color: darkgray;
+}
+
+.txt {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+#familyIcon {
+  height: 10rem;
+  width: 12rem;
+}
+
+/* Caixas Pin */
+.caixa {
+  display: flex;
+  background-color: #63b279;
+  border-radius: 20px;
+  width: 100%;
+  height: 50%;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 4px 4px 4px gray;
+}
+
+.caixa input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
+}
+
+.txtPin {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+.conjunto {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.caixaButton {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  height: 100px;
+}
+
+#caixas {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 25vh;
+  width: 20%;
+  margin-top: 50px;
+  margin-left: 100px;
+  align-items: center;
+}
+
+.buttonBox {
+  display: flex;
+  width: 100%;
+  height: 50%;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.buttons {
+  border: none;
+  background-color: #63b279;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  font-weight: bold;
+  box-shadow: 4px 4px 4px gray;
+}
+.buttons:hover {
+  background-color: #49855a;
+  transform: scale(1.1);
+}
+
+/* Produtos */
+.txt2 {
+  padding-bottom: 15px;
+}
+
+.produtos {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.fundoProdutos {
+  display: flex;
+  flex-direction: row;
+  background-color: #e8e8e8;
+  border: 1px solid #cacaca;
+  border-radius: 20px;
+  gap: 15px;
+  transition: transform 0.2s ease;
+  box-shadow: 7px 7px 4px gray;
+}
+
+.divProdutos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.imagemProdutos {
+  height: 9rem;
+  width: 9rem;
+  margin: 15px;
+}
+
+.txtProdutos {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.infoProdutos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nomeProduto {
+  font-size: 1.8rem;
+  font-variant-caps: all-small-caps;
+}
+
+/* Membros Familia */
+.menu {
+  background-color: #63b279;
+  width: 100%;
+  border: 1px solid #63b279;
+  margin-top: 35px;
+}
+
+#membros {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin: 1rem;
+  justify-content: center;
+}
+
+#membroIcon {
+  width: 7rem;
+  height: auto;
+}
+.imgName {
+  background-color: #63b279;
+  border: 5px solid #63b279;
+  border-radius: 10%;
+  box-shadow: 4px 4px 2px #3b6848;
+}
+
+.fundoMembro {
+  background-color: #49855a;
+  border: 0.5rem solid #49855a;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 4px 4px 4px #3b6848;
+}
+
+.txtMembros {
+  font-size: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.remover {
+  border: none;
+  width: 100%;
+  height: 10%;
+  background-color: #ba2f2f;
+  border-radius: 20px;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  margin-top: 10%;
+  height: 25px;
+  font-weight: bold;
+}
+
+.remover:hover {
+  background-color: #822222;
+  transform: scale(1.1);
+}
+
+.fundoProdutos:hover {
+  transform: scale(1.05);
+}
