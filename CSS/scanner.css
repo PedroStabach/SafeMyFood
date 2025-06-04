@@ -64,7 +64,7 @@
 }
 .tudo{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 .produtos{
     height: 200px;
@@ -74,24 +74,32 @@
     background-color: #C0C0C0;
     box-shadow: 1px 1px 3px black;
     
+    
 
 
 }
 .itens{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     margin-left: 5px;
     margin-top: 10px;
     background-color: #D3D3D3;
     border-radius: 10px;
+    box-shadow: 1px 1px 3px black;
     
 }
 
 .conjunto{
     padding: 10px;
+    transition: transform 0.2s ease;
+
     
     
+}
+
+.conjunto:hover{
+    transform: scale(1.1);
 }
 
 .textos{
@@ -144,5 +152,14 @@
   color: black ;
   
 
+}
+.tut{
+    height: 450px;
+    display: flex;
+    align-items: center;
+    margin-left: 75px;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px black;
 }
 

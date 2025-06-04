@@ -1,206 +1,209 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    list-style: none;
-    outline: 0;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  list-style: none;
+  outline: 0;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #D9D9D9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d9d9d9;
 }
 
 .bodyArea {
-    width: 768px;
-    overflow-x: hidden;
+  width: 768px;
+  overflow-x: hidden;
 }
 
 /* Cabeçalho */
 header {
-    background-color: #63B279;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
-    position: sticky;
-    top: 0;
+  background-color: #63b279;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  position: sticky;
+  top: 0;
 }
 
 header #nameText {
-    color: #fff;
-    font-size: 25px; /* 'size' não é uma propriedade válida, o correto é font-size */
-    padding-left: 50px;
+  color: #fff;
+  font-size: 25px; /* 'size' não é uma propriedade válida, o correto é font-size */
+  padding-left: 50px;
 }
 
 .headArea {
-    flex: 2; /* Removida duplicação */
+  flex: 2; /* Removida duplicação */
 }
 
 header nav {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 header li {
-    display: inline;
-    padding: 0 8px;
-    font-size: 20px; /* 'size' não é válido, trocado por font-size */
+  display: inline;
+  padding: 0 8px;
+  font-size: 20px; /* 'size' não é válido, trocado por font-size */
 }
 
 header a {
-    text-decoration: none;
-    color: #fff;
+  text-decoration: none;
+  color: #fff;
 }
 
 header a:hover {
-    color: #D9D9D9;
+  color: #d9d9d9;
 }
 
 #botaoLogin {
-    color: #fff;
-    background-color: #000;
-    border-radius: 5px;
-    border: 1px solid #000;
-    padding: 8px 13px;
+  color: #fff;
+  background-color: #000;
+  border-radius: 5px;
+  border: 1px solid #000;
+  padding: 8px 13px;
 }
 
 .areaMob {
-    display: none;
-    width: 43px;
-    height: 43px;
-    padding-right: 3px;
-    justify-content: flex-end;
-    text-align: end;
-    align-items: flex-end;
+  display: none;
+  width: 43px;
+  height: 43px;
+  padding-right: 3px;
+  justify-content: flex-end;
+  text-align: end;
+  align-items: flex-end;
 }
 
 .menuMob {
-    display: none;
-    position: fixed;
-    top: 100px;
-    right: 0;
-    width: 70px;
-    background-color: #63B279;
-    padding: 10px;
-    border-left: 1px solid #478157;
-    border-bottom: 1px solid #478157;
-    text-align: end;
+  display: none;
+  position: fixed;
+  top: 100px;
+  right: 0;
+  width: 70px;
+  background-color: #63b279;
+  padding: 10px;
+  border-left: 1px solid #478157;
+  border-bottom: 1px solid #478157;
+  text-align: end;
 }
 
 .menuMob li {
-    padding-top: 10px;
+  padding-top: 10px;
 }
 
 .menuMob li a {
-    text-decoration: none;
-    color: #fff;
-    padding-top: 20px;
+  text-decoration: none;
+  color: #fff;
+  padding-top: 20px;
 }
 
 .ativo {
-    display: block;
-    animation: slidein 2s;
+  display: block;
+  animation: slidein 2s;
 }
 
 @keyframes slidein {
-    from {
-        margin-right: -30%;
-        margin-top: 0;
-    }
-    to {
-        margin-right: 0;
-        margin-top: 0;
-    }
+  from {
+    margin-right: -30%;
+    margin-top: 0;
+  }
+  to {
+    margin-right: 0;
+    margin-top: 0;
+  }
 }
 
 @media (max-width: 767px) {
-    footer {
-        width: 100%;
-        display: block;
-        background-color: #63B279;
-        height: 50px;
-        position: absolute;
-        bottom: 0;
-    }
+  footer {
+    width: 100%;
+    display: block;
+    background-color: #63b279;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+  }
 
-    footer img {
-        width: 30px;
-    }
+  footer img {
+    width: 30px;
+  }
 
-    .footerArea {
-        display: flex;
-        align-items: center;
-        height: 50px;
-    }
+  .footerArea {
+    display: flex;
+    align-items: center;
+    height: 50px;
+  }
 
-    footer nav {
-        width: 100%;
-    }
+  footer nav {
+    width: 100%;
+  }
 
-    footer nav ul {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+  footer nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-    footer nav ul li {
-        flex: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+  footer nav ul li {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-    header {
-        display: none;
-    }
+  header {
+    display: none;
+  }
 
-    .areaMob {
-        display: inline-block;
-    }
+  .areaMob {
+    display: inline-block;
+  }
 
-    .mobTrac1, .mobTrac2, .mobTrac3 {
-        width: 40px;
-        height: 8px;
-        border-radius: 5px;
-        background-color: #fff;
-        margin-bottom: 5px;
-    }
+  .mobTrac1,
+  .mobTrac2,
+  .mobTrac3 {
+    width: 40px;
+    height: 8px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-bottom: 5px;
+  }
 
-    .mobTrac {
-        margin-left: 10px;
-        width: 30px;
-    }
+  .mobTrac {
+    margin-left: 10px;
+    width: 30px;
+  }
 
-    .mobTrac3 {
-        margin-left: 0;
-    }
+  .mobTrac3 {
+    margin-left: 0;
+  }
 
-    .mobTrac4 {
-        margin-left: 20px;
-        width: 20px;
-    }
+  .mobTrac4 {
+    margin-left: 20px;
+    width: 20px;
+  }
 
-    .headArea2 nav { 
-        display: none;
-    }
+  .headArea2 nav {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
-    .bodyArea {
-        width: 100%;
-    }
+  .bodyArea {
+    width: 100%;
+  }
 }
 
 @media (min-width: 1000px) {
-    .headArea2, .headArea {
-        flex: 1;
-    }
+  .headArea2,
+  .headArea {
+    flex: 1;
+  }
 
-    header nav {
-        justify-content: center;
-    }
+  header nav {
+    justify-content: center;
+  }
 }
