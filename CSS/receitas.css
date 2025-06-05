@@ -1,68 +1,49 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Arial, Helvetica, sans-serif;
 }
 
 body {
-    background-color: #D9D9D9;
-}
-
-header {
-    background-color: #63B279;
-    color: white;
-    padding: 15px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-nav a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-header-image {
-    max-width: 3500px;
+  background-color: #d9d9d9;
 }
 
 .botaoLogin {
-    background-color: #333;
-    padding: 8px 16px;
-    border-radius: 5px;
+  background-color: #333;
+  padding: 8px 16px;
+  border-radius: 5px;
 }
 
 .receitas {
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 0 20px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
 }
 
 .receitas h1 {
-    font-size: 28px;
-    margin-bottom: 30px;
-    color: #2d4a2e;
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #2d4a2e;
 }
 
 .receitas img {
-    display: block;
-    margin: 0 auto 20px;
-    width: 100%;
-    max-width: 1200px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 12px;
+  display: block;
+  margin: 0 auto 20px;
+  width: 100%;
+  max-width: 1200px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
 }
 
 .search-section {
-    background-color: #fff;
-    margin: 2rem auto;
-    padding: 1.5rem;
-    max-width: 800px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .form-linha {
@@ -110,60 +91,60 @@ header-image {
 }
 
 .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .card {
-    background-color: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-    flex: 1 1 300px;
-    padding: 20px;
-    transition: transform 0.3s;
-    margin-top: 1rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  flex: 1 1 300px;
+  padding: 20px;
+  transition: transform 0.3s;
+  margin-top: 1rem;
 }
 
 .card:hover {
-    transform: scale(1.02);
+  transform: scale(1.02);
 }
 
 .card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 15px;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
 }
 
 .card h2 {
-    font-size: 14px;
-    margin-bottom: 15px;
-    color: #555;
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #555;
 }
 
 .card ul {
-    margin-left: 20px;
-    margin-bottom: 10px;
+  margin-left: 20px;
+  margin-bottom: 10px;
 }
 
 .card p {
-    font-size: 14px;
-    margin-bottom: 15px;
-    color: #555;
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #555;
 }
 
 .btn {
-    text-decoration: none;
-    background-color: #28a745;
-    color: #fff;
-    padding: 8px 14px;
-    border-radius: 8px;
-    display: inline-block;
-    transition: background-color 0.3s;
+  text-decoration: none;
+  background-color: #28a745;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 8px;
+  display: inline-block;
+  transition: background-color 0.3s;
 }
 
 .btn:hover {
-    background-color: #218838;
+  background-color: #218838;
 }
