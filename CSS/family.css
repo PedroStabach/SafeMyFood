@@ -231,6 +231,10 @@
   box-shadow: 4px 4px 4px #3b6848;
 }
 
+.fundoProdutos:hover {
+  transform: scale(1.03);
+}
+
 .txtMembros {
   font-size: 1rem;
   text-align: center;
@@ -252,8 +256,4 @@
 .remover:hover {
   background-color: #822222;
   transform: scale(1.1);
-}
-
-.fundoProdutos:hover {
-  transform: scale(1.05);
 }
