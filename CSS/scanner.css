@@ -1,10 +1,9 @@
 .info {
-    margin-top: 20px;
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 40%;
+    margin-top: 50px;
   }
   
   .linha {
@@ -12,6 +11,7 @@
     justify-content: space-between;
     margin: 8px 0;
     width: 200px; 
+    
   }
   
   .label {
@@ -43,9 +43,9 @@
     margin-top: 40px;
 }
 .fotoleite{
-    margin-left: 20px;
     border-radius: 10px;
-    margin-top: 80px;
+    margin-top: 50px;
+    
 }
 .imgqrcode{
     margin-top: 20px;
@@ -63,8 +63,8 @@
 
 }
 .tudo{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    justify-content:space-around;
 }
 .produtos{
     height: 200px;
@@ -99,7 +99,7 @@
 }
 
 .conjunto:hover{
-    transform: scale(1.1);
+    transform: scale(1.08);
 }
 
 .textos{
@@ -157,9 +157,16 @@
     height: 450px;
     display: flex;
     align-items: center;
-    margin-left: 75px;
-    margin-top: 10px;
+    justify-content: center;
     border-radius: 5px;
-    box-shadow: 1px 1px 1px black;
+    margin-top: 50px;
 }
+
+.fundo{
+    margin-top: 100px;
+    
+}
+
+
+
 
