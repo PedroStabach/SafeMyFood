@@ -146,13 +146,6 @@
   padding-bottom: 15px;
 }
 
-.produtos {
-  width: 80%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 15px;
-}
-
 .fundoProdutos {
   display: flex;
   flex-direction: row;
@@ -161,6 +154,13 @@
   gap: 15px;
   transition: transform 0.2s ease;
   box-shadow: 7px 7px 4px gray;
+}
+
+.produtos {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
 }
 
 .divProdutos {
