@@ -1,7 +1,7 @@
 
 const header = document.getElementById("header").innerHTML = `
             <div class="headArea">
-            <div id="nameText">SaveMyFood</div>
+            <img src="images/logoSMF.png" class="logo">
         </div>
         <div class="headArea2">
             <nav>

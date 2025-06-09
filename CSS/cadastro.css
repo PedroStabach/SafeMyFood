@@ -166,6 +166,28 @@ aside .botaoLogin {
     justify-content: center;
     align-items: center;
 }
+
+.areaImagensLogin {
+    font-size: 12px;
+    text-align: center;
+    color: #63B279;
+}
+#click{
+    left: calc(50% - 200px);
+    position: absolute;
+    top: 120px;
+    width: 350px;
+    height: 350px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#click h1 {
+    padding-top: 10px;
+}
 @media(max-width: 650px) {
     aside .asideArea, aside .asideArea2 {
         min-width: none;
