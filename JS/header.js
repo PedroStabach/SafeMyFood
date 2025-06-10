@@ -1,16 +1,17 @@
+
 const header = document.getElementById("header").innerHTML = `
             <div class="headArea">
-            <div id="nameText">SaveMyFood</div>
+            <img src="images/logoSMF.png" class="logo">
         </div>
-        <div class="headeArea">
+        <div class="headArea2">
             <nav>
                 <ul>
-                    <li><a href="">Inicio</a> </li>
-                    <li><a href="">Familia</a></li>
-                    <li><a href="">Biblioteca</a></li>
-                    <li><a href="">Scanner</a></li>
-                    <li><a href="">Receitas</a></li>
-                    <li><a href="" id="botaoLogin">Entrar</a></li>
+                    <li><a href="home.html">Inicio</a> </li>
+                    <li><a href="family.html">Familia</a></li>
+                    <li><a href="biblioteca.html">Biblioteca</a></li>
+                    <li><a href="scanner.html">Scanner</a></li>
+                    <li><a href="receitas.html">Receitas</a></li>
+                    <li><a href="cadastro.html" id="botaoLogin">Entrar</a></li>
                 </ul>
             </nav>
         </div>`;
@@ -28,3 +29,5 @@ const footer = document.getElementById("footer").innerHTML = `
                 </ul>
             </nav>
         </div>`;
+
+
