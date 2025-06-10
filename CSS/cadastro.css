@@ -204,22 +204,7 @@ aside .botaoLogin {
 .invisivel {
   display: none;
 }
-/*
-.areaCadastro {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 350px;
-  background-color: white;
-  padding: 30px;
-  border-radius: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-  z-index: 999; 
-}
+
 
 .areaCadastro h1 {
   text-align: center;
@@ -288,7 +273,7 @@ aside .botaoLogin {
   cursor: pointer;
 }
 
-*/
+
 @media(max-width: 650px) {
     aside .asideArea, aside .asideArea2 {
         min-width: none;
