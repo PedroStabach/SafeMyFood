@@ -172,10 +172,11 @@ aside .botaoLogin {
     text-align: center;
     color: #63B279;
 }
-#click{
-    left: calc(50% - 200px);
-    position: absolute;
-    top: 120px;
+.areaCadastro {
+    position: fixed; /* Mudado de absolute para fixed */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     width: 350px;
     height: 350px;
     background-color: white;
@@ -184,10 +185,110 @@ aside .botaoLogin {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    z-index: 999;
 }
-#click h1 {
+
+.invisivel {
+    display: none;
+}
+.areaCadastro h1 {
     padding-top: 10px;
 }
+.asideArea2 .click {
+    flex: none;
+}
+.cadastro {
+    display: none;
+}
+.invisivel {
+  display: none;
+}
+/*
+.areaCadastro {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  z-index: 999; 
+}
+
+.areaCadastro h1 {
+  text-align: center;
+  color: #63B279;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.areaCadastro form nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.areaCadastro form nav ul li {
+  list-style: none;
+}
+
+.areaCadastro .areaInputCadastro {
+  display: flex;
+  align-items: center;
+  background-color: #D9D9D9;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.areaCadastro .areaInputCadastro img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.areaCadastro .areaInputCadastro input {
+  background: none;
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 14px;
+}
+
+.areaCadastro .areaImagensLogin {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 12px;
+  color: #63B279;
+}
+
+.areaCadastro .areaImagensLogin ul {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.areaCadastro .areaImagensLogin ul li {
+  list-style: none;
+}
+
+.areaCadastro .areaImagensLogin ul li img {
+  width: 24px;
+  height: 24px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+*/
 @media(max-width: 650px) {
     aside .asideArea, aside .asideArea2 {
         min-width: none;
